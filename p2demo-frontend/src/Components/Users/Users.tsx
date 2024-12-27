@@ -36,7 +36,7 @@ export const Users:React.FC  = () => {
     //Function to get all users 
     const getAllUsers = async () => {
 
-        const response = await axios.get("http://localhost:4444/users", {withCredentials:true})
+        const response = await axios.get("http://54.145.25.3:4444/users", {withCredentials:true})
         .then((response)=>{
             console.log(response)
             setUsers(response.data)

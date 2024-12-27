@@ -36,7 +36,7 @@ export const Login:React.FC = () => {
         //TODO: make sure the username and password are present before proceeding
 
         //use the username/password from the state object
-        const response = await axios.post("http://localhost:4444/auth", loginCreds, {withCredentials:true}) //withCredentials lets us interact with sessions on the BackEnd
+        const response = await axios.post("http://54.145.25.3:4444/auth", loginCreds, {withCredentials:true}) //withCredentials lets us interact with sessions on the BackEnd
         .then(
 
             (response) => {
