@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController //Combines @Controller and @ResponseBody
 @RequestMapping ("/users")//All HTTP requests ending in /users will be sent here
-@CrossOrigin(value = "http://localhost:5173", allowCredentials = "true")
+@CrossOrigin(value = {"http://localhost:5173", "http://p2frontendbucketcj.s3-website-us-east-1.amazonaws.com"}, allowCredentials = "true")
 public class UserController {
 
     //autowire the UserService

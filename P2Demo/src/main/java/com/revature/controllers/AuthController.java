@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin(value = "http://localhost:5173", allowCredentials = "true")
+@CrossOrigin(value = {"http://localhost:5173", "http://p2frontendbucketcj.s3-website-us-east-1.amazonaws.com"}, allowCredentials = "true")
 public class AuthController {
 
     //autowire the service
